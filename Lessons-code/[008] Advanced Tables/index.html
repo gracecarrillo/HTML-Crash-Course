@@ -11,27 +11,48 @@
     </head>
     
     <body>
-        <p>Paragraph</p>
+        <h1>
+            Welcome to my Website
+        </h1>
+
+        <p>
+            We can create tables with the "table" tag
+            <br />
+            with rows using the "tr" tag and columns or divisions
+            <br />
+            with the "td" tag. Also, we can use the "th" tag to create 
+            <br /> header cell elements.
+        </p>
         
-        <table>
+        <table border="1">
+            <tr> <!-- First row which contains the table 
+                        headers -->
+                <th>Column 1 header</th>
+                <th>Column 2 header</th>
+                <th>Column 3 header</th>
+            </tr>
+
+             <!--Second row-->
             <tr>
-                <th>Column 1 heading</th>
-                <th>Column 2 heading</th>
-                <th>Column 3 heading</th>
+                <td>Row 2, column 1</td>
+                <td colspan="2">
+                    Row 2, column 2, also spanning (or joining) Row 2, column 3
+                </td>
+            </tr>
+
+            <!--Third row-->
+            <tr>
+                <td rowspan="2">
+                    Row 3, column 1, also spanning (or joining) Row 4, column 1
+                </td>
+                <td>Row 3, column 2</td>
+                <td>Row 3, column 3</td>
             </tr>
             <tr>
-                <td>Row 2, cell 1</td>
-                <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+                <td>Row 4, column 2</td>
+                <td>Row 4, column 3</td>
             </tr>
-            <tr>
-                <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
-                <td>Row 3, cell 2</td>
-                <td>Row 3, cell 3</td>
-            </tr>
-            <tr>
-                <td>Row 4, cell 2</td>
-                <td>Row 4, cell 3</td>
-            </tr>
-        </table>
-    </body>
-</html>
+
+        </table> <!--End of table-->
+    </body><!--End of main body-->
+</html><!--End of page-->
